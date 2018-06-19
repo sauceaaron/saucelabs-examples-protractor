@@ -1,0 +1,30 @@
+{
+  "name": "saucelabs-examples-protractor",
+  "version": "1.0.0",
+  "description": "Example tests using Protractor with Sauce Labs",
+  "keywords": [
+    "protractor",
+    "javascript",
+    "selenium",
+    "Sauce Labs"
+  ],
+  "author": "Aaron Evans <aaron.evans@saucelabs.com.com>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sauceaaron/saucelabs-examples-protractor.git"
+  },
+  "homepage": "https://github.com/sauceaaron/saucelabs-examples-protractor#readme",
+  "bugs": {
+    "url": "https://github.com/sauceaaron/saucelabs-examples-protractor/issues"
+  },
+  "scripts": {
+    "test": "npm run local-test",
+    "local-test": "node_modules/.bin/protractor conf/local.conf.js",
+    "sauce-test": "node_modules/.bin/protractor conf/saucelabs.conf.js",
+    "selenium-server": "webdriver-manager update && node_modules/.bin/webdriver-manager start"
+  },
+  "devDependencies": {
+    "protractor": "^5.3.2"
+  }
+}
